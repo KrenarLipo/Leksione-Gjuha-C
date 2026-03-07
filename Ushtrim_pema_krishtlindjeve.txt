@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int i, j;
+    int spaces = 4;
+    int stars = 1;
+
+    // Upper part of the tree
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= spaces; j++) {
+            printf(" ");
+        }
+
+        for (j = 1; j <= stars; j++) {
+            printf("*");
+        }
+
+        printf("\n");
+        spaces--;
+        stars += 2;
+    }
+
+    // Trunk of the tree
+    for (i = 1; i <= 2; i++) {
+        printf("    *\n");
+    }
+
+    return 0;
+}
